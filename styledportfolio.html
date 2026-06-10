@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gideon Dayo - Portfolio</title>
 
-  <!-- Tailwind via Play CDN: zero-setup, compiles in the browser. Great for learning. -->
+  <!-- cdn setup -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Fonts: a distinctive serif for headings + a clean sans for body -->
+  <!--google font connect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Tailwind config: extend the default theme with our custom fonts + warm palette.
-       This <script> must come AFTER the Tailwind CDN script above. -->
+  <!-- configs -->
   <script>
     tailwind.config = {
       theme: {
@@ -24,11 +23,11 @@
             sans: ['Inter', 'sans-serif'],
           },
           colors: {
-            forest: '#1F3A2E',   // deep green — our primary
-            moss:   '#5C7A6B',   // muted secondary
-            cream:  '#F2EDE4',   // warm paper background
-            ochre:  '#C97B3F',   // sparing warm accent
-            ink:    '#1A1714',   // near-black text
+            forest: '#1F3A2E',   
+            moss:   '#5C7A6B',   
+            cream:  '#F2EDE4',   
+            ochre:  '#C97B3F',   
+            ink:    '#1A1714',   
           },
         },
       },
@@ -36,10 +35,11 @@
   </script>
 </head>
 
-<!-- font-sans applies Inter; text-ink is the dark text color; bg-cream is the warm off-white -->
 <body class="font-sans text-ink bg-cream antialiased">
 
-  <!-- ============ NAVIGATION ============ -->
+
+  
+  <!--  navbar  -->
   <nav class="sticky top-0 z-50 bg-cream/80 backdrop-blur-md border-b border-ink/10">
     <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
       <a href="#home" class="font-display font-bold text-lg tracking-tight text-forest">GD.</a>
@@ -53,7 +53,7 @@
     </div>
   </nav>
 
-  <!-- ============ HERO ============ -->
+  <!--  topper  -->
   <section id="home" class="max-w-5xl mx-auto px-6 py-20 md:py-32">
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div>
@@ -78,13 +78,12 @@
         <div class="aspect-square rounded-2xl overflow-hidden bg-forest/10 shadow-2xl">
           <img src="profile.jpg" alt="Photo of Gideon Dayo" class="w-full h-full object-cover">
         </div>
-        <!-- Decorative accent square peeking out behind the photo -->
         <div class="absolute -z-10 -bottom-4 -right-4 w-full h-full rounded-2xl bg-ochre/25"></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ ABOUT ============ -->
+  <!--  abt  -->
   <section id="about" class="max-w-5xl mx-auto px-6 py-20 border-t border-ink/10">
     <h2 class="font-display text-4xl font-bold mb-8 text-forest">About Me</h2>
     <div class="grid md:grid-cols-3 gap-8 text-ink/75 leading-relaxed">
@@ -100,7 +99,7 @@
     </div>
   </section>
 
-  <!-- ============ EXPERIENCE ============ -->
+  <!--  exp  -->
   <section id="experience" class="max-w-5xl mx-auto px-6 py-20 border-t border-ink/10">
     <h2 class="font-display text-4xl font-bold mb-12 text-forest">Experience</h2>
     <div class="space-y-10">
@@ -158,7 +157,7 @@
     </div>
   </section>
 
-  <!-- ============ PROJECTS ============ -->
+  <!--  proj  -->
   <section id="projects" class="max-w-5xl mx-auto px-6 py-20 border-t border-ink/10">
     <h2 class="font-display text-4xl font-bold mb-12 text-forest">Projects</h2>
     <div class="grid md:grid-cols-2 gap-6">
@@ -190,7 +189,7 @@
     </div>
   </section>
 
-  <!-- ============ SKILLS ============ -->
+  <!--  skills  -->
   <section id="skills" class="max-w-5xl mx-auto px-6 py-20 border-t border-ink/10">
     <h2 class="font-display text-4xl font-bold mb-12 text-forest">Skills</h2>
     <div class="grid md:grid-cols-2 gap-12">
@@ -245,7 +244,7 @@
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
+  <!-- = footer = -->
   <footer class="max-w-5xl mx-auto px-6 py-10 border-t border-ink/10 text-center text-sm text-moss">
     <p>© 2026 Gideon Dayo. Built with HTML & Tailwind CSS.</p>
   </footer>
