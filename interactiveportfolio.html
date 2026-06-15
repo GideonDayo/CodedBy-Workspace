@@ -32,7 +32,7 @@
   </script>
 
   <style>
-    /* scroll reveal — elements start invisible and slide up */
+    /* scroll reveal not sure if this is working ngl */
     .reveal {
       opacity: 0;
       transform: translateY(24px);
@@ -43,7 +43,7 @@
       transform: none;
     }
 
-    /* active nav link highlight */
+    /* active nav highlight */
     nav a.active {
       color: #1F3A2E;
       font-weight: 600;
@@ -275,7 +275,7 @@
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // active nav link based on scroll position
+    // nav detector based off pos
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
@@ -291,7 +291,7 @@
       });
     }, { passive: true });
 
-    // render skill tags from data so the markup stays clean
+    // render skill tags from data #looksmaxxed
     const skills = {
       programming: ['Java', 'Python', 'JavaScript', 'HTML / CSS', 'SQL', 'React.js', 'React Native'],
       tools: ['VS Code', 'Eclipse', 'Git'],
